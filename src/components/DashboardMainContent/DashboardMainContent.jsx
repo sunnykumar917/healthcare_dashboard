@@ -8,25 +8,25 @@ import { sampleSchedule } from "../../Data/sampleSchedule";
 
 const DashboardMainContent = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, p: 2 }}> 
       <Grid container spacing={3} alignItems="stretch">
-        <Grid item xs={12} md={8}>
+        
+        <Grid item xs={12} md={8} marginRight={2}>
           <Paper
-            elevation={0} // remove shadow
+            elevation={0}
             sx={{
               height: "100%",
               display: "flex",
               flexDirection: "column",
-              borderRadius: 0,
-              gap: 2,
+              gap: 2,  
             }}
           >
             <Box
               sx={{
                 p: 2,
                 flexGrow: 1,
-                backgroundColor: 'transparent', 
-                borderRadius: 0
+                backgroundColor: 'transparent',
+                borderRadius: 2,
               }}
             >
               <DashboardOverview />
@@ -44,6 +44,7 @@ const DashboardMainContent = () => {
           </Paper>
         </Grid>
 
+        
         <Grid item xs={12} md={4}>
           <Paper
             elevation={0}
@@ -51,9 +52,10 @@ const DashboardMainContent = () => {
               height: "100%",
               display: "flex",
               flexDirection: "column",
+              gap: 2,
               p: 2,
-              justifyContent: "space-between",
               backgroundColor: '#f7fafe',
+              borderRadius: 2,
             }}
           >
             <Box>
